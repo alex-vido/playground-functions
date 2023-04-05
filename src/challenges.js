@@ -26,6 +26,17 @@ const highestCount = (arr) => {
 };
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+const calcTriangleArea = (base, height) => (base * height) / 2;
+const calcRectangleArea = (base, height) => base * height;
+const calcAllAreas = (base, height, form) => {
+  if (form === 'triângulo') {
+    return `valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
+  } else if (form === 'retângulo') {
+    return `valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
+  } else {
+    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+  }
+};
 
 // Desafio 7 - Crie a função catAndMouse
 
