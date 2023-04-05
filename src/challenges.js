@@ -12,7 +12,7 @@ const footballPoints = (wins, ties) => (wins * 3) + ties;
 
 // Desafio 5 - Crie a função highestCount
 const highestCount = (arr) => {
-  let biggestN = -1;
+  let biggestN = -9999999;
   let counter;
   for (n of arr) {
     if (n > biggestN) {
@@ -32,13 +32,34 @@ const calcAllAreas = (base, height, form) => {
   if (form === 'triângulo') {
     return `valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
   } else if (form === 'retângulo') {
-    return `valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
-  } else {
-    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
   }
+    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 };
 
 // Desafio 7 - Crie a função catAndMouse
+const catAndMouse = (mouse, cat1, cat2) => {
+  let distanceCat1;
+  let distanceCat2;
+  if (mouse > cat1) {
+    distanceCat1 = mouse - cat1;
+  } else {
+    distanceCat1 = cat1 - mouse;
+  }
+
+  if (mouse > cat2) {
+    distanceCat2 = mouse - cat2;
+  } else {
+    distanceCat2 = cat2 - mouse;
+  }
+
+  if (distanceCat1 < distanceCat2) {
+   return 'cat1'
+  } else if (distanceCat1 > distanceCat2) {
+   return 'cat2'
+  }
+   return 'os gatos trombam e o rato foge';
+ };
 
 // Desafio 8 - Crie a função fizzBuzz
 
