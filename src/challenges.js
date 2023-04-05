@@ -5,12 +5,25 @@ const compareTrue = (bool1, bool2) => (bool1 && bool2);
 const splitSentence = (str) => str.split(' ');
 
 // Desafio 3 - Crie a função concatName
-const concatName = (arr) => `${arr[arr.length -1]}, ${arr[0]}`;
+const concatName = (arr) => `${arr[arr.length - 1]}, ${arr[0]}`;
 
 // Desafio 4 - Crie a função footballPoints
 const footballPoints = (wins, ties) => (wins * 3) + ties;
 
 // Desafio 5 - Crie a função highestCount
+const highestCount = (arr) => {
+  let biggestN = -1;
+  let counter;
+  for (n of arr) {
+    if (n > biggestN) {
+      biggestN = n;
+      counter = 1;
+    } else if (n === biggestN) {
+      counter += 1;
+    }
+  }
+  return counter;
+};
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
