@@ -54,14 +54,29 @@ const catAndMouse = (mouse, cat1, cat2) => {
   }
 
   if (distanceCat1 < distanceCat2) {
-   return 'cat1'
+   return 'cat1';
   } else if (distanceCat1 > distanceCat2) {
-   return 'cat2'
+   return 'cat2';
   }
    return 'os gatos trombam e o rato foge';
  };
 
 // Desafio 8 - Crie a função fizzBuzz
+const fizzBuzz = (arr) => {
+  let res = [];
+  for (let number of arr) {
+    if (number % 15 === 0) {
+      res.push('fizzBuzz');
+    } else if (number % 3 === 0) {
+      res.push('fizz');
+    } else if (number % 5 === 0) {
+      res.push('buzz');
+    } else {
+      res.push('bug!');
+    }
+  }
+    return res;
+ };
 
 // Desafio 9 - Crie a função encode e a função decode
 
