@@ -1,4 +1,10 @@
 // Desafio 1 - Crie a função compareTrue
+const compareTrue = (bool1, bool2) => {
+  if (bool1 && bool2) {
+    return true;
+  }
+  return false;
+}
 
 // Desafio 2 - Crie a função splitSentence
 
