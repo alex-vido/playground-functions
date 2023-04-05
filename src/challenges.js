@@ -1,15 +1,11 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (bool1, bool2) => {
-  if (bool1 && bool2) {
-    return true;
-  }
-  return false;
-};
+const compareTrue = (bool1, bool2) => (bool1 && bool2);
 
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (str) => str.split(' ');
 
 // Desafio 3 - Crie a função concatName
+const concatName = (arr) => `${arr[arr.length -1]}, ${arr[0]}`;
 
 // Desafio 4 - Crie a função footballPoints
 
