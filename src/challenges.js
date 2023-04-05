@@ -4,9 +4,10 @@ const compareTrue = (bool1, bool2) => {
     return true;
   }
   return false;
-}
+};
 
 // Desafio 2 - Crie a função splitSentence
+const splitSentence = (str) => str.split(' ');
 
 // Desafio 3 - Crie a função concatName
 
