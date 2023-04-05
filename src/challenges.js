@@ -34,7 +34,7 @@ const calcAllAreas = (base, height, form) => {
   } else if (form === 'retângulo') {
     return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
   }
-    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+  return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 };
 
 // Desafio 7 - Crie a função catAndMouse
@@ -46,20 +46,18 @@ const catAndMouse = (mouse, cat1, cat2) => {
   } else {
     distanceCat1 = cat1 - mouse;
   }
-
   if (mouse > cat2) {
     distanceCat2 = mouse - cat2;
   } else {
     distanceCat2 = cat2 - mouse;
   }
-
   if (distanceCat1 < distanceCat2) {
    return 'cat1';
   } else if (distanceCat1 > distanceCat2) {
    return 'cat2';
   }
-   return 'os gatos trombam e o rato foge';
- };
+  return 'os gatos trombam e o rato foge';
+};
 
 // Desafio 8 - Crie a função fizzBuzz
 const fizzBuzz = (arr) => {
@@ -75,10 +73,51 @@ const fizzBuzz = (arr) => {
       res.push('bug!');
     }
   }
-    return res;
- };
+  return res;
+};
 
 // Desafio 9 - Crie a função encode e a função decode
+const encode = (str) => {
+  let strSplit = str.split('');
+  let newString = '';
+  for (let i = 0; i < strSplit.length; i += 1) {
+    if(strSplit[i] === 'a') {
+      newString += 1;
+    } else if(strSplit[i] === 'e') {
+      newString += 2;
+    } else if(strSplit[i] === 'i') {
+      newString += 3;
+    } else if(strSplit[i] === 'o') {
+      newString += 4;
+    } else if(strSplit[i] === 'u') {
+      newString += 5;
+    } else {
+      newString += strSplit[i];
+    }
+  };
+  return newString;
+ };
+
+ const decode = (str) => {
+  let strSplit = str.split('');
+  let newString = '';
+  for (let i = 0; i < strSplit.length; i += 1) {
+    if(strSplit[i] === '1') {
+      newString += 'a';
+    } else if(strSplit[i] === '2') {
+      newString += 'e';
+    } else if(strSplit[i] === '3') {
+      newString += 'i';
+    } else if(strSplit[i] === '4') {
+      newString += 'o';
+    } else if(strSplit[i] === '5') {
+      newString += 'u';
+    } else {
+      newString += strSplit[i];
+    }
+  };
+  return newString;
+ };
 
 // Desafio 10 - Crie a função techList
 
