@@ -52,9 +52,9 @@ const catAndMouse = (mouse, cat1, cat2) => {
     distanceCat2 = cat2 - mouse;
   }
   if (distanceCat1 < distanceCat2) {
-   return 'cat1';
+    return 'cat1';
   } else if (distanceCat1 > distanceCat2) {
-   return 'cat2';
+    return 'cat2';
   }
   return 'os gatos trombam e o rato foge';
 };
@@ -81,15 +81,15 @@ const encode = (str) => {
   let strSplit = str.split('');
   let newString = '';
   for (let i = 0; i < strSplit.length; i += 1) {
-    if(strSplit[i] === 'a') {
+    if (strSplit[i] === 'a') {
       newString += 1;
-    } else if(strSplit[i] === 'e') {
+    } else if (strSplit[i] === 'e') {
       newString += 2;
-    } else if(strSplit[i] === 'i') {
+    } else if (strSplit[i] === 'i') {
       newString += 3;
-    } else if(strSplit[i] === 'o') {
+    } else if (strSplit[i] === 'o') {
       newString += 4;
-    } else if(strSplit[i] === 'u') {
+    } else if (strSplit[i] === 'u') {
       newString += 5;
     } else {
       newString += strSplit[i];
@@ -102,7 +102,7 @@ const encode = (str) => {
   let strSplit = str.split('');
   let newString = '';
   for (let i = 0; i < strSplit.length; i += 1) {
-    if(strSplit[i] === '1') {
+    if (strSplit[i] === '1') {
       newString += 'a';
     } else if(strSplit[i] === '2') {
       newString += 'e';
@@ -124,7 +124,7 @@ const techList = (arr, str) => {
   let arrSort = arr.sort();
   let techName = [];
   if (typeof arr[0] !== 'undefined') {
-    for (value of arr) {
+    for (value of arrSort) {
       techName.push({
         tech: value,
         name: str

@@ -9,9 +9,9 @@ function hydrate(str) {
     if(!isNaN(parseInt(letter, 10))) {
       counter += parseInt(letter, 10);
     }
-    if (counter === 1) {
-      return `${counter} copo de água`;
-    }
+  }
+  if (counter === 1) {
+    return `${counter} copo de água`;
   }
   return `${counter} copos de água`;
 }
