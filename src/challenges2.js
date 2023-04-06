@@ -3,6 +3,15 @@
 // Desafio 12 -  Crie a função triangleCheck
 
 // Desafio 13 - Crie a função hydrate
+function hydrate(str) {
+  let counter = 0
+  for (letter of str) {
+    if(!isNaN(parseInt(letter, 10))) {
+      counter += parseInt(letter)
+    }
+  }
+  return `${counter} copos de água`
+}
 
 /* eslint no-undef: 0 */
 
