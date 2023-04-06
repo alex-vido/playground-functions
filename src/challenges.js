@@ -120,6 +120,19 @@ const encode = (str) => {
  };
 
 // Desafio 10 - Crie a função techList
+const techList = (arr, str) => {
+  let arrSort = arr.sort();
+  let techName = [];
+  if (typeof arr[0] !== 'undefined') {
+    for (value of arr) {
+      techName.push({
+        tech: value,
+        name: str
+      })
+    }
+  }
+  return techName;
+}
 
 // Não modifique essas linhas
 module.exports = {
